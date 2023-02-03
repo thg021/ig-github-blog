@@ -1,6 +1,5 @@
 {
-    "singleQuote": true,
-    "semi": false, 
-    "trailingComma": "none", 
-    "bracketSameLine": true
+    "arrowParens": "always", 
+    "singleQuote": true, 
+    "semi": false
 }
