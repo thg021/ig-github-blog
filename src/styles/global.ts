@@ -7,6 +7,13 @@ export const GlobalStyle = createGlobalStyle`
     }
 
 
+    body{
+        background: ${({ theme }) => theme['base-background']};
+        color: ${({ theme }) => theme['base-title']};
+        -webkit-font-smoothing: antialiased;
+    }
+
+
     body, input, textarea, button {
         font: 400 1rem 'Nunito';
     }
