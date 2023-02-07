@@ -12,12 +12,12 @@ export const SearchInputContainer = styled.form`
     margin-bottom: 0.85rem;
 
     h3 {
-      font-size: ${({ theme }) => theme.textSizes['title-title-s']};
+      font-size: ${({ theme }) => theme.textSizes['title-s']};
       color: ${({ theme }) => theme.colors['base-subtitle']};
     }
 
     span {
-      font-size: ${({ theme }) => theme.textSizes['text-text-s']};
+      font-size: ${({ theme }) => theme.textSizes['text-s']};
       color: ${({ theme }) => theme.colors['base-span']};
     }
   }
