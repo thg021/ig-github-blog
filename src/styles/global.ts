@@ -8,13 +8,28 @@ export const GlobalStyle = createGlobalStyle`
 
 
     body{
-        background: ${({ theme }) => theme['base-background']};
-        color: ${({ theme }) => theme['base-title']};
+        background: ${({ theme: { colors } }) => colors['base-background']};
+        color: ${({ theme: { colors } }) => colors['base-title']};
         -webkit-font-smoothing: antialiased;
     }
 
 
     body, input, textarea, button {
-        font: 400 1rem 'Nunito';
+        font: 400 ${({ theme }) =>
+          theme.textSizes['text-text-m']} 'Nunito', sans-serif;
+      line-height: 160%;
     }
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  button {
+    cursor: pointer;
+  }
 `
