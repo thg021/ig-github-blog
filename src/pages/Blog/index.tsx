@@ -1,3 +1,9 @@
-export default function Blog() {
-  return <div>Blog</div>
+import { Profile } from './components/Profile'
+
+export function Blog() {
+  return (
+    <>
+      <Profile />
+    </>
+  )
 }
